@@ -18,3 +18,10 @@ document.querySelector('#login-btn').onclick = () =>{
     loginForm.classList.toggle('active');
 
 }
+
+let navBar = document.querySelector('.navbar');
+
+document.querySelector('#login-btn').onclick = () =>{
+    Navbar.classList.toggle('active');
+
+}

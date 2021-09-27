@@ -218,13 +218,18 @@ i{
 
 .header .login-form {
     position: absolute;
-    top: 110%; right: 110%;
+    top: 110%; right: -110%;
     width: 30rem;
     box-shadow: var(--box-shadow);
     padding:2rem;
     border-radius: .5rem;
     background: #fff;
     text-align: center;
+}
+
+.header .login-form.active {
+    right: 2rem;
+    transition: .4s linear;
 }
 
 .header .login-form h3 {
@@ -253,4 +258,70 @@ i{
 .header .login-form p a{
     color:var(--orange);
     text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries */
+
+@media (max-width:991px){
+
+    html {
+        font-size: 55%;
+     
+    }
+
+    .header {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+
+     #menu-btn {
+         display: inline-block;
+     }
+
+    .header .navbar {
+        position:absolute;
+        top:110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: #fff;
+    }
+
+    .header .navbar {
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+
+}
+@media (max-width:450px){
+
+    html {
+        font-size: 50%;
+     
+    }
+
 }
