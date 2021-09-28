@@ -301,15 +301,24 @@ i{
          display: inline-block;
      }
 
+     .header .search-form {
+         width: 90% ;
+     }
+
     .header .navbar {
         position:absolute;
         top:110%; right: -110%;
-        width: 30rem;
+        width: 22rem;
         box-shadow: var(--box-shadow);
         background: #fff;
     }
 
-    .header .navbar {
+    .header .navbar.active {
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
         font-size: 2rem;
         margin: 2rem 2.5rem;
         display: block;
