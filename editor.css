@@ -33,6 +33,18 @@ body {
 
 }
 
+section {
+    padding: 2rem 9%;   
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:var(--black);
+}
+
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -260,6 +272,39 @@ i{
     text-decoration: underline;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(./img/frutas1.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+
+}
+
+.home .content {
+    text-align: center;
+    width: 60rem;
+}
+
+.home .content h3 {
+    color:var(--black);
+    font-size:3rem;
+}  
+
+.home .content h3 span {
+    color:var(--orange);
+
+}  
+
+.home .content p {
+    color:var(--light-color);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}  
 
 
 
@@ -291,6 +336,11 @@ i{
     .header {
         padding: 2rem;
     }
+    section {
+        padding: 2rem;
+        
+    }
+    
 
 }
 

@@ -12,7 +12,7 @@ let shoppingCart = document.querySelector('.shopping-cart');
 
 document.querySelector('#cart-btn').onclick = () =>{
     shoppingCart.classList.toggle('active');
-    searchForm.classList.toggle('active');
+    searchForm.classList.remove('active');
     loginForm.classList.remove('active');
     navbar.classList.remove('active');
 
@@ -34,7 +34,7 @@ document.querySelector('#menu-btn').onclick = () =>{
     navbar.classList.toggle('active');
     searchForm.classList.remove('active');
     shoppingCart.classList.remove('active');
-    loginForm.classList.toggle('active');
+    loginForm.classList.remove('active');
 
 
 }
